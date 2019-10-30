@@ -9,11 +9,11 @@ Remote：远程仓库
 ### 把文件添加到版本库
 	1. 允许该目录使用#git#管理(文件中的.git 文件夹请勿胡乱修改)
 	`git init`
-
+	
 	2. 把命令推到暂存区 
 	`git add readme.md`
 	`git add 1.txt 2.txt 3.txt`可以提交多个文件到暂存区，按空格分隔
-
+	
 	3. 把文件推送到本地仓库
 	`git commit -m` "本次修改了xxxxx"
 ### 仓库状态
@@ -25,11 +25,11 @@ Remote：远程仓库
 	`git log`
 	git log命令显示从最近到最远的提交日志。如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数：
 	`git log --pretty=oneline`
-
+	
 	6. 需要友情提示的是，你看到的一大串类似2e70fd...376315的是commit id（版本号）
-
+	
 	在 Git中，用HEAD表示当前版本，也就是最新的提交commit id，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
-
+	
 	现在我们要把当前版本回退到上一个版本，就可以使用git reset命令：
 	`git reset --hard HEAD^`
 	
@@ -38,7 +38,6 @@ Remote：远程仓库
 	`git reset --hard 2e70fdf`
 	
 	现在，你回退到了某个版本，关掉了电脑，第二天早上就后悔了，想恢复到新版本怎么办？找不到新版本的commit id怎么办？
-
+	
 	Git提供了一个命令git reflog用来记录你的每一次命令：
 	`git reflog`
-	这里是测试字符
