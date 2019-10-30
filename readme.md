@@ -6,9 +6,9 @@ Index / Stage：暂存区
 Repository：仓库区（或本地仓库）
 Remote：远程仓库
 ```
-	### 把文件添加到版本库
-	1. 允许该目录使用#git#管理(文件中的.git 文件夹请勿胡乱修改)
-	`git init`
+### 把文件添加到版本库
+1. 允许该目录使用#git#管理(文件中的.git 文件夹请勿胡乱修改)
+`git init`
 
 	2. 把命令推到暂存区 
 	`git add readme.md`
